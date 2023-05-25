@@ -54,7 +54,7 @@ git clone https://github.com/Silent-Watcher/cli-word-guessing-game
 
  
 ```bash
-  cd cli-word-guessing-game
+  cd cli_word_guessing_game
 ```
 3. Run `yarn` to install the necessary packages.
 
