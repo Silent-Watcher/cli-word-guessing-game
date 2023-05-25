@@ -1,5 +1,5 @@
 
-# CLI Word Guessing Game
+# CLI Word Guessing Game 
 
 CLI Word Guessing Game is a command-line interface (CLI) application written in Node.js. It is a simple word guessing game where players have to guess a random word letter by letter within a certain number of attempts. The game provides an enjoyable and interactive way to improve vocabulary and word recognition skills.
 
@@ -12,7 +12,6 @@ CLI Word Guessing Game is a command-line interface (CLI) application written in 
 
 
 -   [Features](https://github.com/Silent-Watcher/cli-word-guessing-game#features)
--   [demo](https://github.com/Silent-Watcher/cli-word-guessing-game#demo)
 -   [preview](https://github.com/Silent-Watcher/cli-word-guessing-game#preview)
 -   [Prerequisites](https://github.com/Silent-Watcher/cli-word-guessing-game#Prerequisites)
 -   [Installation](https://github.com/Silent-Watcher/cli-word-guessing-game#Installation)
@@ -32,12 +31,6 @@ CLI Word Guessing Game is a command-line interface (CLI) application written in 
 - Provides feedback on correct and incorrect guesses
 - Ends the game when the word is guessed correctly or when the number of attempts is exhausted
 - Supports a variety of customization options, such as changing the word list or the number of attempts
-
-## Demo
-### netlify
-
-### GitHub pages
-
 
 ## Preview
 <img src='https://iili.io/HrdkD1n.png'>
@@ -77,6 +70,13 @@ To start the game, run the following command:
 ```bash
  node .
 ```
+
+or you can run this project directly from npm : 
+
+```bash
+ $ npx cli-word-guessing-game
+```
+
 ## Configuration
 The game allows you to customize certain aspects by modifying the config.js file.
 
