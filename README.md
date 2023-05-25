@@ -96,8 +96,9 @@ Before contributing, please review the contribution guidelines.
 ## Contact
 For additional information or inquiries, you can reach out to the project maintainer:
 
-Name: Silent-Watcher
-Email: alitabatabaee20@mail.com
+- Name: Silent-Watcher
+- Email: alitabatabaee20@mail.com
+
 Feel free to contact the maintainer for any questions or feedback regarding the project.
 
 
