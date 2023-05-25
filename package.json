@@ -1,9 +1,10 @@
 {
-  "name": "cli-game",
+  "name": "cli_word_guessing_game",
   "version": "1.0.0",
   "type": "module",
   "main": "index.js",
   "license": "MIT",
+  "bin": "./index.js",
   "dependencies": {
     "chalk": "^5.2.0",
     "chalk-animation": "^2.0.3",
