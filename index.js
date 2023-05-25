@@ -7,34 +7,13 @@ import gradient from 'gradient-string';
 import inquirer from 'inquirer';
 import { createSpinner } from 'nanospinner';
 import * as emoji from 'node-emoji';
+import { MAX_ATTEMPTS, WORD_LIST } from './config.js';
 
-const words = [
-  'pneumonia',
-  'Dog',
-  'Quixotic',
-  'Cat',
-  'Exacerbate',
-  'Pen',
-  'Phlegm',
-  'Book',
-  'Conundrum',
-  'Tree',
-  'Chocolate',
-  'Car',
-  'House',
-  'Computer',
-  'Chair',
-  'Elephant',
-  'Table',
-  'Laptop',
-  'Guitar',
-  'Phone',
-];
-
+const words = WORD_LIST;
 const sleep = (ms = 2000) => new Promise((res, rej) => setTimeout(res, ms));
-let word;
-let points = 20;
-let wordWhiteSpaces;
+let word,
+  points = MAX_ATTEMPTS,
+  wordWhiteSpaces;
 
 function addIntro() {
   return new Promise((res, rej) => {
@@ -105,7 +84,6 @@ async function askForLetter() {
 
 async function handleLetterInsertion(letter) {
   const spinner = createSpinner('loading ...').start();
-//   let letterPositionNumber = -1;
   let indices = [];
   await sleep(1000);
   if (word.includes(letter)) {
@@ -113,7 +91,6 @@ async function handleLetterInsertion(letter) {
     for (var i = 0; i < word.length; i++) {
       if (word[i] === letter) indices.push(i);
     }
-    // letterPositionNumber = word.indexOf(letter);
   } else {
     spinner.error({ text: 'oh try again' });
   }
@@ -125,8 +102,8 @@ function updateWord(letter) {
     return;
   } else {
     let WhiteSpacesArray = wordWhiteSpaces.split(' ,');
-    for (let i = 0; i < letter.PositionNumbers.length ; i++) {
-        WhiteSpacesArray[letter.PositionNumbers[i]] = letter.name;
+    for (let i = 0; i < letter.PositionNumbers.length; i++) {
+      WhiteSpacesArray[letter.PositionNumbers[i]] = letter.name;
     }
     let updatedWord = WhiteSpacesArray.join(' ,');
     wordWhiteSpaces = updatedWord;
@@ -151,18 +128,6 @@ await sleep(1000);
 await welcome();
 await askToStartTheGame();
 chooseAWord();
-
-// while (points !== 0) {
-//   if (word.includes('_') && points === 0) {
-//     looser();
-//   } else if (!word.includes('_') && points > 0 ) {
-//     winner();
-//   }else{
-//     let letter = await askForLetter();
-//     let updatedWord = updateWord(letter);
-//     console.log(updatedWord);
-//   }
-// }
 
 for (let i = 1; i <= points; i++) {
   console.log('points : ', points);
