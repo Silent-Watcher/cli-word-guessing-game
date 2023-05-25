@@ -40,7 +40,7 @@ CLI Word Guessing Game is a command-line interface (CLI) application written in 
 
 
 ## Preview
-<img src=''>
+<img src='https://iili.io/HrdkD1n.png'>
 
 ## Prerequisites
 In order to run this project, you will need to have the following installed on your computer:
