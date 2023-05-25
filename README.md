@@ -1,7 +1,5 @@
 
 <h1 align="left" style="display:inline-block;">CLI Word Guessing Game </h1>
-<span><img  width="60px" src="https://user-images.githubusercontent.com/74038190/212257460-738ff738-247f-4445-a718-cdd0ca76e2db.gif" style="max-width: 100%; display: inline-block;" data-target="animated-image.originalImage"></span>
-
 
 CLI Word Guessing Game is a command-line interface (CLI) application written in Node.js. It is a simple word guessing game where players have to guess a random word letter by letter within a certain number of attempts. The game provides an enjoyable and interactive way to improve vocabulary and word recognition skills.
 
