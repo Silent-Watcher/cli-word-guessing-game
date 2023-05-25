@@ -74,9 +74,8 @@ To start the game, run the following command:
 or you can run this project directly from npm : 
 
 ```bash
- $ npx cli-word-guessing-game
+  npx cli_word_guessing_game
 ```
-
 ## Configuration
 The game allows you to customize certain aspects by modifying the config.js file.
 
