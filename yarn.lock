@@ -334,14 +334,6 @@ camelcase@^6.3.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-6.3.0.tgz#5685b95eb209ac9c0c177467778c9c84df58ba9a"
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
 
-camelo@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/camelo/-/camelo-1.2.1.tgz#e8ad167b05120cb6d0a7c2ce6efe81ac01da84f1"
-  integrity sha512-5O6lYuw6JR8viGfxFQhJTaO7cPTsnEaJUK2Gj0JeZ0O+iO78kxfeF47ocx6Ml0K8KWbE/JgBbgi3zF6lcUkvGw==
-  dependencies:
-    regex-escape "^3.4.10"
-    uc-first-array "^1.1.10"
-
 chalk-animation@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/chalk-animation/-/chalk-animation-2.0.3.tgz#8293d9cc2b06cd93df1d1f32f738709c75356a96"
@@ -507,17 +499,7 @@ emoji-regex@^8.0.0:
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-8.0.0.tgz#e818fd69ce5ccfcb404594f842963bf53164cc37"
   integrity sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==
 
-emojic@^1.1.17:
-  version "1.1.17"
-  resolved "https://registry.yarnpkg.com/emojic/-/emojic-1.1.17.tgz#3eaab7e6b75070999b7ce6ed3530d0d9482fcc8c"
-  integrity sha512-o6eKBKh02CxD6lhJ5famk+phxXmQfgdITLN7qB3kcEZnJ+7l0oXVTQe+tShSOEgw1+/8q6iPUUdMqvt5Vlj7zw==
-  dependencies:
-    camelo "^1.2.1"
-    emojilib "^2.0.2"
-    iterate-object "^1.2.0"
-    r-json "^1.1.0"
-
-emojilib@^2.0.2, emojilib@^2.4.0:
+emojilib@^2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/emojilib/-/emojilib-2.4.0.tgz#ac518a8bb0d5f76dda57289ccb2fdf9d39ae721e"
   integrity sha512-5U0rVMU5Y2n2+ykNLQqMoqklN9ICBT/KsvC1Gz6vqHbz2AXXGkG+Pm5rMWk/8Vjrr/mY9985Hi8DYzn1F09Nyw==
@@ -857,11 +839,6 @@ isexe@^2.0.0:
   resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
   integrity sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==
 
-iterate-object@^1.2.0:
-  version "1.3.4"
-  resolved "https://registry.yarnpkg.com/iterate-object/-/iterate-object-1.3.4.tgz#fa50b1d9e58e340a7dd6b4c98c8a5e182e790096"
-  integrity sha512-4dG1D1x/7g8PwHS9aK6QV5V94+ZvyP4+d19qDv43EzImmrndysIl4prmJ1hWWIGCqrZHyaHBm6BSEWHOLnpoNw==
-
 joycon@^3.0.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/joycon/-/joycon-3.1.1.tgz#bce8596d6ae808f8b68168f5fc69280996894f03"
@@ -1181,11 +1158,6 @@ quick-lru@^5.1.1:
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-5.1.1.tgz#366493e6b3e42a3a6885e2e99d18f80fb7a8c932"
   integrity sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==
 
-r-json@^1.1.0:
-  version "1.2.10"
-  resolved "https://registry.yarnpkg.com/r-json/-/r-json-1.2.10.tgz#62a73d9cafa7eabf670e5c2812c27bdb220a968b"
-  integrity sha512-hu9vyLjSlHXT62NAS7DjI9WazDlvjN0lgp3n431dCVnirVcLkZIpzSwA3orhZEKzdDD2jqNYI+w0yG0aFf4kpA==
-
 read-pkg-up@^8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/read-pkg-up/-/read-pkg-up-8.0.0.tgz#72f595b65e66110f43b052dd9af4de6b10534670"
@@ -1228,11 +1200,6 @@ redent@^4.0.0:
   dependencies:
     indent-string "^5.0.0"
     strip-indent "^4.0.0"
-
-regex-escape@^3.4.10:
-  version "3.4.10"
-  resolved "https://registry.yarnpkg.com/regex-escape/-/regex-escape-3.4.10.tgz#b45afec7a6e793b786ad193dc3d18b46b5ae08e6"
-  integrity sha512-qEqf7uzW+iYcKNLMDFnMkghhQBnGdivT6KqVQyKsyjSWnoFyooXVnxrw9dtv3AFLnD6VBGXxtZGAQNFGFTnCqA==
 
 resolve-from@^5.0.0:
   version "5.0.0"
@@ -1521,18 +1488,6 @@ type-fest@^1.0.1, type-fest@^1.2.1, type-fest@^1.2.2:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-1.4.0.tgz#e9fb813fe3bf1744ec359d55d1affefa76f14be1"
   integrity sha512-yGSza74xk0UG8k+pLh5oeoYirvIiWo5t0/o3zHHAO2tRDiZcxWP7fywNlXhqb6/r6sWvwi+RsyQMWhVLe4BVuA==
-
-uc-first-array@^1.1.10:
-  version "1.1.10"
-  resolved "https://registry.yarnpkg.com/uc-first-array/-/uc-first-array-1.1.10.tgz#f9e8017bd8a409ffc98a0d72ef49a8feaa6729b4"
-  integrity sha512-tX2PJLrqtexTxVN9hTTY+K5gPnF2gyj7SfjPF4Q2Xhbi1fSNiO12I/G+AoMzxJLwr9R50CmVn8iAhWCvZlJm3A==
-  dependencies:
-    ucfirst "^1.0.0"
-
-ucfirst@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/ucfirst/-/ucfirst-1.0.0.tgz#4e105b6448d05e264ecec435e0b919363c5f2f2f"
-  integrity sha512-xbB/CQ0GdkxqH4IElZqenn/dL/tnyx7DCDASWJPE92ePbFM21kKemXI2LBeYtEvblf1Ol98hyJJS43Wu5JMQSQ==
 
 unicode-emoji-modifier-base@^1.0.0:
   version "1.0.0"

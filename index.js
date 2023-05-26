@@ -29,12 +29,10 @@ async function welcome() {
   await sleep(3000);
   welcomeText.stop();
   console.log(`
- ${emoji.get('smirk')} you will be presented with a ${chalk.bgCyan(
-    'hidden word'
-  )}
- that you must ${chalk.bgBlueBright('guess')} one letter at a time
+ ${emoji.get('smirk')} you will be presented with a ${chalk.blue('hidden word')}
+ that you must ${chalk.cyan('guess')} one letter at a time
  Each incorrect guess will deduct points from your score, 
- so ${chalk.bgMagenta('be careful')}!
+ so ${chalk.magenta('be careful')}!
  Good luck! ${emoji.get('v')}
   `);
 }
@@ -64,7 +62,6 @@ async function handleQuestion(isCorrect) {
 
 function chooseAWord() {
   word = words.at(Math.random() * 20);
-  console.log(word);
   wordWhiteSpaces = '_ ,'.repeat(word.length);
   console.log(`
             ${wordWhiteSpaces}
@@ -107,7 +104,7 @@ function updateWord(letter) {
     }
     let updatedWord = WhiteSpacesArray.join(' ,');
     wordWhiteSpaces = updatedWord;
-    console.log('updatedWord : ', wordWhiteSpaces);
+    console.log(wordWhiteSpaces);
   }
 }
 
@@ -117,9 +114,13 @@ function looser() {
   process.exit(1);
 }
 
-function winner() {
+async function winner() {
   console.clear();
-  console.log(`you win the word was : ${word}`);
+  await sleep(250);
+  chalkAnimation.pulse('you win !').start();
+  await sleep(3000);
+  console.log(`
+  the word was : ${chalk.blue(word)}`);
   process.exit(1);
 }
 
@@ -134,7 +135,7 @@ for (let i = 1; i <= points; i++) {
   let letter = await askForLetter();
   updateWord(letter);
   if (!wordWhiteSpaces.includes('_')) {
-    winner();
+    await winner();
   }
 }
 
