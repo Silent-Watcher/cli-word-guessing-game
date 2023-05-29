@@ -5,6 +5,22 @@
   "main": "index.js",
   "license": "MIT",
   "bin": "./index.js",
+  "keywords": [
+    "game",
+    "cli_word_guessing_game",
+    "word-guessing",
+    "nodejs",
+    "interactive",
+    "educational",
+    "word-recognition",
+    "cli",
+    "command-line",
+    "word_guessing_game"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Silent-Watcher/cli-word-guessing-game"
+  },
   "dependencies": {
     "chalk": "^5.2.0",
     "chalk-animation": "^2.0.3",
