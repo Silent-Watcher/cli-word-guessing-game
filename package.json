@@ -1,6 +1,7 @@
 {
   "name": "cli_word_guessing_game",
   "version": "1.0.0",
+  "author": {"name" : "silent-watcher"},
   "type": "module",
   "main": "index.js",
   "license": "MIT",
@@ -8,11 +9,11 @@
   "keywords": [
     "game",
     "cli_word_guessing_game",
-    "word-guessing",
+    "word_guessing",
     "nodejs",
     "interactive",
     "educational",
-    "word-recognition",
+    "word_recognition",
     "cli",
     "command-line",
     "word_guessing_game"
