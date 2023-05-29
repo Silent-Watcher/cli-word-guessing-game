@@ -4,6 +4,8 @@
 
 CLI Word Guessing Game is a command-line interface (CLI) application written in Node.js. It is a simple word guessing game where players have to guess a random word letter by letter within a certain number of attempts. The game provides an enjoyable and interactive way to improve vocabulary and word recognition skills.
 
+### don't forget to star the project please ! 🤗
+
 [![GitHub stars](https://img.shields.io/github/stars/Silent-Watcher/cli-word-guessing-game?style=social)](https://github.com/Silent-Watcher/cli-word-guessing-game/stargazers)
 
 
